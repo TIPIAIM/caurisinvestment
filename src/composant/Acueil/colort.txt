@@ -1,0 +1,27 @@
+    padding: 2.5rem 2rem;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    gap: 1.2rem;
+    min-height: unset;
+    padding: 2.5rem 2rem;
+  }
+      @media (max-width: 600px) {
+      flex-direction: column;
+    gap: 1.2rem;
+    min-height: unset;
+    padding: 2.2rem 0;
+  }
+
+    @media (max-width: 900px) {
+    text-align: center;
+    padding: 0rem;
+    margin: 2rem auto 1rem auto;
+    letter-spacing: 0.4px;
+  }
+
+   background: linear-gradient(
+    120deg,
+    ${colors.lightGrey} 40%,
+    ${colors.accentGold} 100%
+  );
