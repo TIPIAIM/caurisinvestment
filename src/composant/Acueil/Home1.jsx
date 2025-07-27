@@ -378,7 +378,7 @@ const Home1Component = () => {
             immobilière.
           </SubText>
           <BtnRow>
-            <CTA href="/apropos">Cauris ?</CTA>
+            <CTA href="/presentation">Cauris ?</CTA>
             <CTA2 href="/contact">Discutons</CTA2>
           </BtnRow>
         </ContentLeft>

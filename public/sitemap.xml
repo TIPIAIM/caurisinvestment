@@ -2,141 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Page d'accueil -->
   <url>
-    <loc>https://www.aod-avocats.com/accueil</loc>
-    <lastmod>2115-07-11</lastmod>
+    <loc>https://www.caurisinvestment.com/</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>daily  </changefreq>
     <priority>1.0</priority>
   </url>
  <url>
-    <loc>https://www.aod-avocats.com/</loc>
-    <lastmod>2115-07-11</lastmod>
+    <loc>https://www.caurisinvestment.com/domaines</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- À propos -->
   <url>
-    <loc>https://www.aod-avocats.com/apropos</loc>
-    <lastmod>2115-07-11</lastmod>
+    <loc>https://www.caurisinvestment.com/presentation</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Contact -->
   <url>
-    <loc>https://www.aod-avocats.com/contact</loc>
-    <lastmod>2115-07-11</lastmod>
+    <loc>https://www.caurisinvestment.com/contact</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Article -->
   <url>
-    <loc>https://www.aod-avocats.com/article</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Affaires -->
-  <url>
-    <loc>https://www.aod-avocats.com/affairee</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Sécurité -->
-  <url>
-    <loc>https://www.aod-avocats.com/securitee</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Fiscalité -->
-  <url>
-    <loc>https://www.aod-avocats.com/fiscalitee</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Minier -->
-  <url>
-    <loc>https://www.aod-avocats.com/minierr</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Famille -->
-  <url>
-    <loc>https://www.aod-avocats.com/famillee</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Travail -->
-  <url>
-    <loc>https://www.aod-avocats.com/travail</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Pénal -->
-  <url>
-    <loc>https://www.aod-avocats.com/penall</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Sport -->
-  <url>
-    <loc>https://www.aod-avocats.com/sport</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Arbitrage -->
-  <url>
-    <loc>https://www.aod-avocats.com/arbitrage</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Contentieux -->
-  <url>
-    <loc>https://www.aod-avocats.com/contentieux</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Audit -->
-  <url>
-    <loc>https://www.aod-avocats.com/audit</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Conseil -->
-  <url>
-    <loc>https://www.aod-avocats.com/conseil</loc>
-    <lastmod>2115-07-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Assistance -->
-  <url>
-    <loc>https://www.aod-avocats.com/asistance</loc>
-    <lastmod>2115-07-11</lastmod>
+    <loc>https://www.caurisinvestment.com/projets</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
