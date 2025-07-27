@@ -39,7 +39,7 @@ const itemVariants = {
 const FullWidthFooter = styled.footer`
   width: 100vw;
   background: ${colors.accentTurquoise};
-  position: relative;
+   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
@@ -184,7 +184,8 @@ const NewsletterButton = styled(motion.button)`
   gap: 0.7rem;
   &:hover {
     background: ${colors.accentTurquoise};
-    color: ${colors.white};
+      color: ${colors.white};
+
   }
 `;
 
@@ -230,7 +231,7 @@ const CopyrightSection = styled(motion.div)`
 const BackToTop = styled(motion.button)`
   background: none;
   border: none;
-  color: ${colors.accentGold};
+  color: ${colors.accentGold };
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -489,14 +490,16 @@ const Footer = () => {
             </SocialSection>
             {/* --- À propos / Newsletter --- */}
             <NewsletterSection variants={itemVariants}>
-              <SectionTitle>À propo</SectionTitle>
+              <SectionTitle>À propos</SectionTitle>
               <p style={{ color: colors.white, fontSize: "1rem" }}>
                 Cauris Investment accompagne les investisseurs et institutions
                 en Guinée et Afrique de l’Ouest sur des projets innovants,
                 responsables et sécurisés.
               </p>
               <NewsletterForm>
-                <NewsletterButton>Merci pour votre confiance</NewsletterButton>
+                <NewsletterButton>
+                  Merci pour votre confiance
+                </NewsletterButton>
               </NewsletterForm>
             </NewsletterSection>
           </GridContainer>
