@@ -378,8 +378,8 @@ const Home1Component = () => {
             immobilière.
           </SubText>
           <BtnRow>
-            <CTA href="#contact">Cauris ?</CTA>
-            <CTA2 href="#discutons">Discutons</CTA2>
+            <CTA href="/apropos">Cauris ?</CTA>
+            <CTA2 href="/contact">Discutons</CTA2>
           </BtnRow>
         </ContentLeft>
         <ImageWrapper>
