@@ -11,12 +11,13 @@ import SEO from "../../SEO";
 import { imagess } from "../../assets/imagess";
 import Barnaventete from "../Acueil/Barnaventete";
 
-// EmailJS ENV
+// EmailJS ENV send
 const EMAILJS_CONFIG = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_IDC,
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_IDC,
   userId: import.meta.env.VITE_EMAILJS_USER_IDC,
 };
+
 
 // ------ Email, téléphone, WhatsApp -----------
 const EMAIL = "contact@caurisinvestment.com";
@@ -55,9 +56,9 @@ const ContactContainer = styled(motion.div)`
   margin: 0 auto;
   display: grid;
   margin-top: 10rem;
-   margin-bottom: 8rem;
+  margin-bottom: 8rem;
   grid-template-columns: 1fr 1.2fr;
-   align-items: center;
+  align-items: center;
   z-index: 2;
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -441,22 +442,24 @@ const Contact = () => {
           name: form.name,
           email: form.email,
           message: form.message,
-          date: new Date().toLocaleString("fr-FR"),
+          //     date: new Date().toLocaleString("fr-FR"),
         },
         EMAILJS_CONFIG.userId
       );
+
       toast.success("Message envoyé avec succès !");
       setForm({ name: "", email: "", message: "" });
       setTouched({ name: false, email: false, message: false });
     } catch (error) {
-      toast.error("Erreur lors de l'envoi du message. Essayez à nouveau.");
+       toast.error("Erreur lors de l'envoi du message. Essayez à nouveau.");
     } finally {
       setIsSending(false);
     }
+ 
   };
 
   return (
-    <div >
+    <div>
       <Barnaventete />
       <ContactWrapper
         initial={{ opacity: 0 }}
