@@ -469,9 +469,15 @@ const DomainesIntervention = memo(() => {
     "logements sociaux",
     "gestion immobilière",
     "infrastructures éducatives",
-    "Cauris Investment"
+    "Cauris Investment",
+    "CaurisInvestment",
+          "Cauris Investissement",
+          "Cauris Investment Guinée",
+          "Cauris investment",
+          "Cauris Guinée Investissement",
+          "Caurisinvestment",
   ];
-  const seoImg = domaines[0]?.img || "/corisbulding2.1.avif";
+  const seoImg = domaines[0]?.img || "/img/kori2.PNG"; // Image par défaut si pas de domaine
   const seoUrl = "https://www.caurisinvestment.com/domaines";
 
   return (

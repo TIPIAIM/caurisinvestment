@@ -18,7 +18,6 @@ const EMAILJS_CONFIG = {
   userId: import.meta.env.VITE_EMAILJS_USER_IDC,
 };
 
-
 // ------ Email, téléphone, WhatsApp -----------
 const EMAIL = "contact@caurisinvestment.com";
 const PHONE = "+224612858507";
@@ -451,11 +450,10 @@ const Contact = () => {
       setForm({ name: "", email: "", message: "" });
       setTouched({ name: false, email: false, message: false });
     } catch (error) {
-       toast.error("Erreur lors de l'envoi du message. Essayez à nouveau.");
+      toast.error("Erreur lors de l'envoi du message. Essayez à nouveau.");
     } finally {
       setIsSending(false);
     }
- 
   };
 
   return (
@@ -474,6 +472,13 @@ const Contact = () => {
             "Cauris Investment",
             "immobilier Guinée",
             "investissement Guinée",
+            "CaurisInvestment",
+            "Cauris Investissement",
+            "Cauris Investment Guinée",
+            "Cauris investment",
+            "Cauris Guinée Investissement",
+            "Caurisinvestment",
+
             "partenariat",
             "demande de devis",
             "projets immobiliers",

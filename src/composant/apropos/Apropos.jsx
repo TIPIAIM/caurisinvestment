@@ -299,6 +299,12 @@ const APropos = () => {
     "Cauris Investment est une holding spécialisée dans l’investissement immobilier en Guinée : acquisition, développement, gestion d’actifs, et structuration de partenariats. Découvrez notre équipe et nos valeurs.";
   const seoKeywords = [
     "Cauris Investment",
+    "CaurisInvestment",
+    "Cauris Investissement",
+    "Cauris Investment Guinée",
+    "Cauris investment",
+    "Cauris Guinée Investissement",
+    "Caurisinvestment",
     "Khoris",
     "choris",
     "cauris",

@@ -357,7 +357,12 @@ const Home1Component = () => {
           "projets immobiliers",
           "Caurisinvestment",
           "Cauris Guinée",
-          "Cauris Investment",
+          "CaurisInvestment",
+          "Cauris Investissement",
+          "Cauris Investment Guinée",
+          "Cauris investment",
+          "Cauris Guinée Investissement",
+          "CaurisInvestment",
         ]}
         url="https://www.caurisinvestment.com/"
       />

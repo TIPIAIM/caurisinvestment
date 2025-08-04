@@ -408,7 +408,7 @@ const Realisation3 = () => {
       duration: "2 mois",
       role: "Développement Full-Stack",
       status: "Terminer",
-      link: "https://bibiabusness.vercel.app/", // Ajout du lien
+      link: "https://c", // Ajout du lien
       fullDescription:
         "BibiaBusiness est une boutique en ligne guinéenne spécialisée dans la décoration d'intérieur, les articles de maison et les vêtements, fondée en 2017 par Fatoumata Binta Sow",
     },

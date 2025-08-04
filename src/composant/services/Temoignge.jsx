@@ -202,33 +202,32 @@ const Temoignage = () => {
   const [direction, setDirection] = useState(1);
   const [isDragging, setIsDragging] = useState(false);
 
-  const testimonials =
-  [
+  const testimonials = [
     {
-      author: "Abdoulaye Keita",
-      role: "Avocat associé",
-      text: "Une équipe professionnelle qui a su valoriser notre projet immobilier avec un site vitrine clair, moderne et rassurant. Nos clients trouvent désormais facilement toutes les informations clés.",
-      image: imagess.abdoulayeavoc,
+      author: "Hadja Fatoumatou Diallo",
+      role: "Cliente – Projet d'achat immobilier à Conakry",
+      text: "Je recommande vivement ce cabinet ! De la première consultation à la signature définitive, j’ai senti un accompagnement réel : les conseils juridiques étaient clairs, précis et adaptés à ma situation financière. Tout a été fait pour me rassurer, même lorsque je ne connaissais rien au droit immobilier.",
+      image: imagess.hadjadiallo,
     },
     {
-      author: "Ibrahima Diallo",
-      role: "Fondateur de DICKOB Immobilier",
-      text: "Depuis la mise en ligne de notre site, nous avons doublé nos demandes de visite et nos biens sont mieux mis en valeur. Leur maîtrise du digital appliqué à l’immobilier est remarquable.",
-      image: imagess.paul,
+      author: "Mamadou Bah",
+      role: "Particulier – Location commerciale à Kaloum",
+      text: "En tant que propriétaire, je souhaitais louer mes espaces avec toutes les garanties légales possibles. Le cabinet a pris en main la rédaction du bail, la vérification des dossiers du locataire, et m’a informé à chaque étape. Résultat : un contrat parfaitement sécurisé et conclu en un temps record.",
+      image: imagess.mamadoubah,
     },
     {
-      author: "Naroumba",
-      role: "Assistante commerciale chez AOD Immo",
-      text: "Un site fluide, esthétique et pratique, qui permet à nos clients de visualiser les biens, de déposer des demandes, et même de réserver des visites. Très bon accompagnement de l'équipe.",
-      image: imagess.naroumb,
+      author: "Coumba Camara",
+      role: "Fondatrice d’entreprise – Booster Event",
+      text: "J’avais besoin d’un conseil fiscal et contractuel pour l’ouverture de ma première salle événementielle. J’ai trouvé un service très professionnel et humain : explications claires, langue simple, sans jargon. Le dossier a été réglé efficacement, sans mauvaise surprise.",
+      image: imagess.coumbacamara,
     },
     {
-      author: "Fatoumata Keita",
-      role: "Responsable relation client – AOD Immo",
-      text: "Du zoning à la mise en ligne, chaque étape a été pensée pour valoriser notre activité immobilière. Un service sur mesure, une écoute attentive et un résultat au-delà de nos attentes.",
-      image: imagess.keitaseul2,
-    }
-  ]  
+      author: "Alassane Sy",
+      role: "Investisseur particulier – Financement mixte",
+      text: "Le cabinet m’a guidé dans la structuration de mon apport personnel et de mes partenaires financiers. Grâce à leur expertise, notre dossier a convaincu la banque en moins d’un mois. Merci pour le suivi personnalisé et réactif.",
+      image: imagess.alassanesy,
+    },
+  ];
 
   useEffect(() => {
     if (!isDragging) {
@@ -247,7 +246,9 @@ const Temoignage = () => {
 
   const handlePrev = () => {
     setDirection(-1);
-    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrent(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   const goToTestimonial = (index) => {
@@ -263,32 +264,32 @@ const Temoignage = () => {
     center: {
       x: 0,
       opacity: 1,
-      transition: { 
-        duration: 0.6, 
-        ease: [0.22, 1, 0.36, 1] 
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
     exit: (direction) => ({
       x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
-      transition: { 
-        duration: 0.6, 
-        ease: [0.22, 1, 0.36, 1] 
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1],
       },
     }),
   };
 
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { 
-        delay: 0.3, 
+      transition: {
+        delay: 0.3,
         duration: 0.6,
-        ease: [0.22, 1, 0.36, 1]
-      }
-    }
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
   };
 
   return (
@@ -306,7 +307,8 @@ const Temoignage = () => {
           onDragStart={() => setIsDragging(true)}
           onDragEnd={(_, { offset, velocity }) => {
             setIsDragging(false);
-            const swipe = Math.abs(offset.x) > 100 || Math.abs(velocity.x) > 500;
+            const swipe =
+              Math.abs(offset.x) > 100 || Math.abs(velocity.x) > 500;
             if (swipe) {
               offset.x > 0 || velocity.x > 0 ? handlePrev() : handleNext();
             }
@@ -320,14 +322,14 @@ const Temoignage = () => {
             animate="visible"
             variants={imageVariants}
           />
-          
+
           <QuoteContainer>
             <Quote>
               <FaQuoteLeft />
               {testimonials[current].text}
               <FaQuoteRight />
             </Quote>
-            
+
             <AuthorInfo>
               {testimonials[current].author}
               <span>{testimonials[current].role}</span>
