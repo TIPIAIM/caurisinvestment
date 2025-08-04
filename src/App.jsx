@@ -4,6 +4,7 @@ import Services from "./composant/services/Services";
 import Projet from "./composant/services/Projet";
 import Contact from "./composant/contact/Contact";
 import Footer from "./composant/Acueil/Footer";
+import MonQRCode from "./MonQRCode";
 //import Temoignage from "./composant/services/Temoignge";
 const DomainesIntervention = lazy(() =>
   import("./composant/domainesIntervention/DomainesIntervention")
@@ -26,7 +27,7 @@ function App() {
 
         <Route path="contact" element={<Contact />} />
         <Route path="projets" element={<Projet />} /> {/*retire àpres*/}
-        
+        <Route path="MonQRCode" element={<MonQRCode />} />
     
       </Routes>
       <Footer/>
