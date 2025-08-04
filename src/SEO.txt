@@ -15,7 +15,7 @@ const SEO = ({
   children         // <== Permet d’ajouter d’autres balises meta si besoin sur certaines pages
 }) => (
   <Helmet>
-    {/* --- MÉTAS CLASSIQUES --- */}
+    
     <title>{title}</title>  {/* <= Titre de la page affiché dans l’onglet et dans Google */}
     <meta name="description" content={description} /> {/* <= Description Google */}
     {keywords && <meta name="keywords" content={keywords.join(", ")} />} {/* <= Tableau de mots clés (optionnel) */}
