@@ -15,7 +15,7 @@
       content="Caurisinvestment, plateforme leader en investissement immobilier, montages financiers, structuration de projets et conseil en Guinée et Afrique Ouest."
     />
 
-    <!-- Keywords (peu utilisés, mais ok) -->
+    <!-- Keywords holding (peu utilisés, mais ok) -->
     <meta
       name="keywords"
       content="investissement immobilier Guinée,Caurisinvestment,Cauris investment,  gestion immobilière, partenariat, structuration financière, projet immobilier, Guinée, Afrique, foncier, conseil, montage financier, accompagnement investisseurs, Conakry"
@@ -77,13 +77,13 @@
     <!-- Manifest PWA (si applicable)
     <link rel="manifest" href="/manifest.json" /> -->
 
-    <!-- Structured Data JSON-LD pour l'organisation TIPTAMCODE DEV-->
+    <!-- Structured Data JSON-LD pour l'organisation  DEV-->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Caurisinvestment",
-        "url": "https://https://www.caurisinvestment.com",
+        "url": "https://www.caurisinvestment.com",
         "logo": "https://www.caurisinvestment.com/img/kori2.PNG",
         "description": "Caurisinvestment, plateforme leader en investissement immobilier, structuration de projets, montage financier, gestion immobilière et conseil en Guinée et Afrique de l'Ouest.",
         "sameAs": [
@@ -105,5 +105,125 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITRE + METADESCRIPTION optimisés -->
+    <title>
+      CaurisInvestment · Investissement immobilier & conseil en Guinée‑Conakry
+    </title>
+    <meta
+      name="description"
+      content="CaurisInvestment, leader en structuration de projets immobiliers et montages financiers à Conakry et en Afrique de l’Ouest."
+    />
+
+    <!-- CANONICAL ─ fichier principal index (évite duplications)  -->
+    <link rel="canonical" href="https://www.caurisinvestment.com/" />
+
+    <!-- OPEN GRAPH pour le partage social -->
+    <meta property="og:locale" content="fr_GN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CaurisInvestment" />
+    <meta
+      property="og:title"
+      content="CaurisInvestment · Investissement & Conseil en Guinée"
+    />
+    <meta
+      property="og:description"
+      content="Accompagnement immobilier, structuration de projets et conseil pour investisseurs en Guinée de l’Ouest."
+    />
+    <meta property="og:url" content="https://www.caurisinvestment.com/" />
+    <meta
+      property="og:image"
+      content="https://www.caurisinvestment.com/img/kori2.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Caurisinvestment" />
+    <meta name="twitter:creator" content="@Caurisinvestment" />
+    <meta
+      name="twitter:title"
+      content="CaurisInvestment · Investissement en Guinée"
+    />
+    <meta
+      name="twitter:description"
+      content="Accompagnement stratégique en immobilier et finance à Conakry pour porteurs de projets et investisseurs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.caurisinvestment.com/img/kori2.png"
+    />
+
+    <!-- FAVICONS : carré (1:1), idéal ≥48×48px (96×96, 144×144, 180×180…)  -->
+    <link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png" />
+    <link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png" />
+    <link
+      rel="apple-touch-icon"
+      href="/apple-touch-icon-180x180.png"
+      sizes="180x180"
+    />
+
+    <!-- JSON‑LD Structured Data (Organization + LocalBusiness) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "CaurisInvestment",
+            "url": "https://www.caurisinvestment.com/",
+            "logo": "https://www.caurisinvestment.com/img/kori2.png",
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "telephone": "+224612858507",
+              "contactType": "customer service",
+              "areaServed": "GN"
+            }],
+            "sameAs": [
+              "https://www.facebook.com/caurisinvestment",
+              "https://www.linkedin.com/company/caurisinvestment"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "name": "CaurisInvestment",
+            "legalName": "CaurisInvestment SARL",
+            "image": "https://www.caurisinvestment.com/img/kori2.png",
+            "logo": {
+               "@type": "ImageObject",
+               "url": "https://www.caurisinvestment.com/img/kori2.png",
+               "width": 112,
+               "height": 112
+            },
+            "address": {
+               "@type": "PostalAddress",
+               "streetAddress": " Minière, Dixinn, Conakry, Guinée",
+               "addressLocality": "Conakry",
+               "addressCountry": "GN"
+            },
+            "telephone": "+224612858507",
+            "priceRange": "GF"G€€",
+            "openingHours": "Mo-Fr 09:00‑17:00",
+            "sameAs": [
+              "https://www.facebook.com/caurisinvestment",
+              "https://www.linkedin.com/company/caurisinvestment"
+            ],
+            "url": "https://www.caurisinvestment.com/"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- … -->
   </body>
 </html>

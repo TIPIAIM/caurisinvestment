@@ -228,7 +228,7 @@ const Home2 = memo(() => (
             <b>●</b>
           </SocialDot>
         </Socials>
-        <SiteLink href="https://www.caurisinvestment.com">
+        <SiteLink href="https://www.caurisinvestment.com/contact">
           Contact@caurisinvestment.com
         </SiteLink>
       </BlocLeft>

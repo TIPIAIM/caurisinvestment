@@ -3,20 +3,20 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.caurisinvestment.com/</loc>
-    <lastmod>2025-08-04</lastmod>
+    <lastmod>2025-08-06</lastmod>
     <changefreq>daily  </changefreq>
     <priority>1.0</priority>
   </url>
  <url>
     <loc>https://www.caurisinvestment.com/domaines</loc>
-    <lastmod>2025-08-04</lastmod>
+    <lastmod>2025-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- À propos -->
   <url>
     <loc>https://www.caurisinvestment.com/presentation</loc>
-    <lastmod>2025-08-04</lastmod>
+    <lastmod>2025-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -24,14 +24,14 @@
   <!-- Contact -->
   <url>
     <loc>https://www.caurisinvestment.com/contact</loc>
-    <lastmod>2025-08-04</lastmod>
+    <lastmod>2025-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.caurisinvestment.com/projets</loc>
-    <lastmod>2025-08-04</lastmod>
+    <lastmod>2025-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

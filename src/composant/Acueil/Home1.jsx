@@ -338,7 +338,7 @@ const Home1Component = () => {
 
   return (
     <>
-      {/* SEO pour cette page */}
+      {/* SEO pour cette page  */}
       <SEO
         title="Cauris Investment - Plateforme immobilière et investissement en Guinée"
         description="Investissez dans la croissance réelle : résidences, infrastructures éducatives, gestion locative et projets à impact en Guinée avec Cauris Investment."
