@@ -320,7 +320,7 @@ const Footer = () => {
           <p>
             CAURIS INVESTMENT SARL
             <br />
-            Capital social : 250 000 000 GNF
+            Capital social : 10 000 000 GNF
             <br />
             RCCM : GN-KAL-01-2022-B14-00001
             <br />
