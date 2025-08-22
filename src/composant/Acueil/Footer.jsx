@@ -36,33 +36,39 @@ const itemVariants = {
   },
 };
 
-const FullWidthFooter = styled.footer`
-  width: 100vw;
-  background: ${colors.accentTurquoise};
-   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-`;
-
 const FooterContainer = styled.footer`
-  background: ${colors.overlayAlpha};
+  background: ${colors.accentTurquoise};
   width: 100%;
+  overflow: hidden;
 `;
 
 const InnerContainer = styled(motion.div)`
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem 2rem;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem 1rem;
+  }
 `;
 
 const GridContainer = styled.div`
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 `;
 
@@ -73,6 +79,7 @@ const SectionTitle = styled(motion.h3)`
   margin-bottom: 1.2rem;
   position: relative;
   padding-bottom: 0.5rem;
+  
   &::after {
     content: "";
     position: absolute;
@@ -83,6 +90,10 @@ const SectionTitle = styled(motion.h3)`
     background: ${colors.accentGold};
     border-radius: 2px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const ContactSection = styled(motion.div)`
@@ -90,23 +101,31 @@ const ContactSection = styled(motion.div)`
   flex-direction: column;
   gap: 1.1rem;
 `;
+
 const ContactItem = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: 0.85rem;
   color: ${colors.white};
   font-size: 1rem;
+  
   svg {
     color: ${colors.accentGold};
     flex-shrink: 0;
   }
+  
   a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s ease;
+    
     &:hover {
       color: ${colors.accentGold};
     }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
   }
 `;
 
@@ -122,9 +141,15 @@ const ServiceItem = styled(motion.div)`
   gap: 1rem;
   color: ${colors.white};
   font-size: 0.97rem;
+  
   svg {
     color: ${colors.accentGold};
     flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    gap: 0.8rem;
   }
 `;
 
@@ -151,6 +176,7 @@ const SocialLink = styled(motion.a)`
   border-radius: 100px;
   color: ${colors.white};
   transition: all 0.3s ease;
+  
   &:hover {
     background: ${colors.accentGold};
     color: ${colors.white};
@@ -182,10 +208,15 @@ const NewsletterButton = styled(motion.button)`
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  
   &:hover {
     background: ${colors.accentTurquoise};
-      color: ${colors.white};
+    color: ${colors.white};
+  }
 
+  @media (max-width: 768px) {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -197,15 +228,25 @@ const LegalSection = styled(motion.div)`
   border-top: 1px solid ${colors.accentGold}33;
   padding-top: 2rem;
   margin-top: 1.3rem;
+
+  @media (max-width: 768px) {
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+  }
 `;
 
 const LegalLinks = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: left;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+    justify-content: center;
+  }
 `;
-//securis
+
 const LegalLink = styled(motion.a)`
   color: ${colors.accentGold};
   text-decoration: none;
@@ -216,8 +257,14 @@ const LegalLink = styled(motion.a)`
   transition: color 0.3s ease;
   background: none;
   border: none;
+  cursor: pointer;
+  
   &:hover {
     color: ${colors.white};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
   }
 `;
 
@@ -226,12 +273,17 @@ const CopyrightSection = styled(motion.div)`
   color: ${colors.white};
   font-size: 0.95rem;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+  }
 `;
 
 const BackToTop = styled(motion.button)`
   background: none;
   border: none;
-  color: ${colors.accentGold };
+  color: ${colors.accentGold};
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -239,8 +291,14 @@ const BackToTop = styled(motion.button)`
   cursor: pointer;
   font-weight: 600;
   transition: color 0.3s;
+  
   &:hover {
     color: ${colors.white};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    margin: 1rem auto 0;
   }
 `;
 
@@ -256,16 +314,28 @@ const ModalBackdrop = styled(motion.div)`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 1rem;
+  box-sizing: border-box;
 `;
+
 const ModalContent = styled(motion.div)`
   background: ${colors.white};
   padding: 2rem;
   border-radius: 8px;
   max-width: 480px;
-  width: 94%;
+  width: 100%;
   position: relative;
   color: ${colors.dark};
+  max-height: 80vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    max-height: 85vh;
+  }
 `;
+
 const CloseButton = styled.button`
   position: absolute;
   top: 1rem;
@@ -275,27 +345,50 @@ const CloseButton = styled.button`
   color: ${colors.dark};
   cursor: pointer;
   font-size: 1.3rem;
+  z-index: 10;
 `;
+
 const ModalTitle = styled.h3`
   color: ${colors.primary};
   font-size: 1.45rem;
   margin-bottom: 1.1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
 `;
 
 const ModalText = styled.div`
   line-height: 1.6;
   margin-bottom: 1rem;
   text-align: left;
+  
   h4 {
     color: ${colors.primary};
     margin: 1.4rem 0 0.45rem;
+    font-size: 1.1rem;
   }
+  
   ul {
     padding-left: 1.2rem;
     margin: 0.5rem 0;
   }
+  
   li {
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 1rem;
+      margin: 1rem 0 0.35rem;
+    }
+    
+    li {
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -404,12 +497,12 @@ const Footer = () => {
         <ModalText>
           <h4>Article 1 - Objet</h4>
           <p>
-            Les présentes CGU régissent l’utilisation de la plateforme
+            Les présentes CGU régissent l'utilisation de la plateforme
             caurisinvestment.com et des services proposés.
           </p>
           <h4>Article 2 - Confidentialité</h4>
           <p>
-            Cauris Investment s’engage à protéger vos données conformément au
+            Cauris Investment s'engage à protéger vos données conformément au
             RGPD.
           </p>
           <h4>Article 3 - Propriété intellectuelle</h4>
@@ -423,152 +516,155 @@ const Footer = () => {
   };
 
   return (
-    <FullWidthFooter>
-      <FooterContainer>
-        <InnerContainer
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={footerVariants}
-        >
-          <GridContainer>
-            {/* --- Contact --- */}
-            <ContactSection variants={itemVariants}>
-              <SectionTitle>Contact</SectionTitle>
-              <ContactItem>
-                <MapPin size={18} />
-                <span>Minière, Dixinn, Conakry, Guinée</span>
-              </ContactItem>
-              <ContactItem>
-                <Phone size={18} />
-                <a href="tel:+224612858507">+224 612 85 85 07</a>
-              </ContactItem>
-              <ContactItem>
-                <Mail size={18} />
-                <a href="mailto:contact@caurisinvestment.com">
-                  contact@caurisinvestment.com
-                </a>
-              </ContactItem>
-            </ContactSection>
-            {/* --- Activités / Services --- */}
-            <ServicesSection variants={itemVariants}>
-              <SectionTitle>Nos activités</SectionTitle>
-              <ServiceItem>
-                <Hand size={18} />
-                <span>Structuration d’investissements</span>
-              </ServiceItem>
-              <ServiceItem>
-                <FileText size={18} />
-                <span>Partenariats & Conseil</span>
-              </ServiceItem>
-              <ServiceItem>
-                <Lock size={18} />
-                <span>Gouvernance & Conformité</span>
-              </ServiceItem>
-            </ServicesSection>
-            {/* --- Réseaux sociaux --- */}
-            <SocialSection variants={itemVariants}>
-              <SectionTitle>Réseaux sociaux</SectionTitle>
-              <SocialLinks>
-                <SocialLink
-                  href="https://www.linkedin.com/company/caurisinvestment"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin size={22} />
-                </SocialLink>
-                <SocialLink
-                  href="https://www.facebook.com/caurisinvestment"
-                  target="_blank"
-                  aria-label="Facebook"
-                  rel="noopener noreferrer"
-                >
-                  <Facebook size={22} />
-                </SocialLink>
-              </SocialLinks>
-            </SocialSection>
-            {/* --- À propos / Newsletter --- */}
-            <NewsletterSection variants={itemVariants}>
-              <SectionTitle>À propos</SectionTitle>
-              <p style={{ color: colors.white, fontSize: "1rem" }}>
-                Cauris Investment accompagne les investisseurs et institutions
-                en Guinée et Afrique de l’Ouest sur des projets innovants,
-                responsables et sécurisés.
-              </p>
-              <NewsletterForm>
-                <NewsletterButton>
-                  Merci pour votre confiance
-                </NewsletterButton>
-              </NewsletterForm>
-            </NewsletterSection>
-          </GridContainer>
-          {/* --- Légal / CGU --- */}
-          <LegalSection variants={itemVariants}>
-            <LegalLinks>
-              <LegalLink
-                as="button"
-                onClick={() => openModal(legalContents.mentions)}
+    <FooterContainer>
+      <InnerContainer
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={footerVariants}
+      >
+        <GridContainer>
+          {/* --- Contact --- */}
+          <ContactSection variants={itemVariants}>
+            <SectionTitle>Contact</SectionTitle>
+            <ContactItem>
+              <MapPin size={18} />
+              <span>Minière, Dixinn, Conakry, Guinée</span>
+            </ContactItem>
+            <ContactItem>
+              <Phone size={18} />
+              <a href="tel:+224612858507">+224 612 85 85 07</a>
+            </ContactItem>
+            <ContactItem>
+              <Mail size={18} />
+              <a href="mailto:contact@caurisinvestment.com">
+                contact@caurisinvestment.com
+              </a>
+            </ContactItem>
+          </ContactSection>
+          
+          {/* --- Activités / Services --- */}
+          <ServicesSection variants={itemVariants}>
+            <SectionTitle>Nos activités</SectionTitle>
+            <ServiceItem>
+              <Hand size={18} />
+              <span>Structuration d'investissements</span>
+            </ServiceItem>
+            <ServiceItem>
+              <FileText size={18} />
+              <span>Partenariats & Conseil</span>
+            </ServiceItem>
+            <ServiceItem>
+              <Lock size={18} />
+              <span>Gouvernance & Conformité</span>
+            </ServiceItem>
+          </ServicesSection>
+          
+          {/* --- Réseaux sociaux --- */}
+          <SocialSection variants={itemVariants}>
+            <SectionTitle>Réseaux sociaux</SectionTitle>
+            <SocialLinks>
+              <SocialLink
+                href="https://www.linkedin.com/company/caurisinvestment"
+                target="_blank"
+                aria-label="LinkedIn"
+                rel="noopener noreferrer"
               >
-                <FileText size={16} /> Mentions légales
-              </LegalLink>
-              <LegalLink
-                as="button"
-                onClick={() => openModal(legalContents.privacy)}
+                <Linkedin size={22} />
+              </SocialLink>
+              <SocialLink
+                href="https://www.facebook.com/caurisinvestment"
+                target="_blank"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
               >
-                <Lock size={16} /> Confidentialité
-              </LegalLink>
-              <LegalLink
-                as="button"
-                onClick={() => openModal(legalContents.faq)}
-              >
-                <HelpCircle size={16} /> FAQ
-              </LegalLink>
-              <LegalLink
-                as="button"
-                onClick={() => openModal(legalContents.cgu)}
-              >
-                <FileText size={16} /> CGU
-              </LegalLink>
-            </LegalLinks>
-          </LegalSection>
-          {/* --- Copyright --- */}
-          <CopyrightSection variants={itemVariants}>
-            <p>
-              © {new Date().getFullYear()} Cauris Investment – Tous droits
-              réservés
+                <Facebook size={22} />
+              </SocialLink>
+            </SocialLinks>
+          </SocialSection>
+          
+          {/* --- À propos / Newsletter --- */}
+          <NewsletterSection variants={itemVariants}>
+            <SectionTitle>À propos</SectionTitle>
+            <p style={{ color: colors.white, fontSize: "1rem", lineHeight: "1.5" }}>
+              Cauris Investment accompagne les investisseurs et institutions
+              en Guinée et Afrique de l'Ouest sur des projets innovants,
+              responsables et sécurisés.
             </p>
-            <BackToTop onClick={scrollToTop}>
-              <ArrowUp size={18} />
-              Retour en haut
-            </BackToTop>
-          </CopyrightSection>
-        </InnerContainer>
-
-        {/* --- Modal Légal --- */}
-        {isModalOpen && (
-          <ModalBackdrop
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={closeModal}
-          >
-            <ModalContent
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
+            <NewsletterForm>
+              <NewsletterButton>
+                Merci pour votre confiance
+              </NewsletterButton>
+            </NewsletterForm>
+          </NewsletterSection>
+        </GridContainer>
+        
+        {/* --- Légal / CGU --- */}
+        <LegalSection variants={itemVariants}>
+          <LegalLinks>
+            <LegalLink
+              as="button"
+              onClick={() => openModal(legalContents.mentions)}
             >
-              <CloseButton onClick={closeModal}>
-                <X size={24} />
-              </CloseButton>
-              <ModalTitle>{modalContent.title}</ModalTitle>
-              {modalContent.content}
-            </ModalContent>
-          </ModalBackdrop>
-        )}
-      </FooterContainer>
-    </FullWidthFooter>
+              <FileText size={16} /> Mentions légales
+            </LegalLink>
+            <LegalLink
+              as="button"
+              onClick={() => openModal(legalContents.privacy)}
+            >
+              <Lock size={16} /> Confidentialité
+            </LegalLink>
+            <LegalLink
+              as="button"
+              onClick={() => openModal(legalContents.faq)}
+            >
+              <HelpCircle size={16} /> FAQ
+            </LegalLink>
+            <LegalLink
+              as="button"
+              onClick={() => openModal(legalContents.cgu)}
+            >
+              <FileText size={16} /> CGU
+            </LegalLink>
+          </LegalLinks>
+        </LegalSection>
+        
+        {/* --- Copyright --- */}
+        <CopyrightSection variants={itemVariants}>
+          <p>
+            © {new Date().getFullYear()} Cauris Investment – Tous droits
+            réservés
+          </p>
+          <BackToTop onClick={scrollToTop}>
+            <ArrowUp size={18} />
+            Retour en haut
+          </BackToTop>
+        </CopyrightSection>
+      </InnerContainer>
+
+      {/* --- Modal Légal --- */}
+      {isModalOpen && (
+        <ModalBackdrop
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={closeModal}
+        >
+          <ModalContent
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <CloseButton onClick={closeModal}>
+              <X size={24} />
+            </CloseButton>
+            <ModalTitle>{modalContent.title}</ModalTitle>
+            {modalContent.content}
+          </ModalContent>
+        </ModalBackdrop>
+      )}
+    </FooterContainer>
   );
 };
 

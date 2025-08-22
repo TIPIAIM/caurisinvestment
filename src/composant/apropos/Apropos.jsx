@@ -455,6 +455,7 @@ const APropos = () => {
           ))}
         </TeamGrid>
       </TeamSection>
+      
     </>
   );
 };
